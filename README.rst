@@ -1,9 +1,9 @@
-=============================
-{{cookiecutter.project_name}}
-=============================
+=======================
+Cookiecutter Python App
+=======================
 
-:Version: {{cookiecutter.version}}
+:Version: 0.1.0
 :Status: Production/Stable
-:Author: {{cookiecutter.full_name}}
+:Author: José Antonio Perdiguero López
 
-{{cookiecutter.project_short_description}}.
+Cookiecutter template for simple python applications.
