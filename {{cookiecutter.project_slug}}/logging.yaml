@@ -1,0 +1,16 @@
+formatters:
+  brief:
+    format: '%(message)s'
+  default:
+    format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: brief
+    level: INFO
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.FileHandler
+    formatter: precise
+    filename: app.log
