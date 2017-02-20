@@ -48,14 +48,17 @@ class BaseApp(metaclass=ABCMeta):
 
         return logging.getLogger(__name__)
 
+    def add_arguments(self, parser):
+        parser.add_argument('args', nargs='*', default=[], help='positional args')
+
     def parse_args(self):
         parser = ArgumentParser(
             description='{{cookiecutter.project_short_description}}'
         )
 
-        parser.add_argument('args', nargs='*', help='positional args')
+        self.add_arguments(parser)
 
-        return parser.parse_args()
+        return vars(parser.parse_args()
 
     @abstractmethod
     def run(self, *args, **kwargs):
