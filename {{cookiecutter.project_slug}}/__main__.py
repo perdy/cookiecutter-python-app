@@ -1,6 +1,6 @@
 import sys
 
-from app import App
+from {{ app_slug }}.app import App
 
 
 if __name__ == '__main__':

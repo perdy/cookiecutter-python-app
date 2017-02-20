@@ -1,4 +1,4 @@
-from base_app import BaseApp
+from {{ app_slug }}.base_app import BaseApp
 
 
 class App(BaseApp):
