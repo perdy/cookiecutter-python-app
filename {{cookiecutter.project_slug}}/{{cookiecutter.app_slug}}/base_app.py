@@ -58,7 +58,7 @@ class BaseApp(metaclass=ABCMeta):
 
         self.add_arguments(parser)
 
-        return vars(parser.parse_args()
+        return vars(parser.parse_args())
 
     @abstractmethod
     def run(self, *args, **kwargs):
